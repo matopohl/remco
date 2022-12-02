@@ -1,0 +1,10 @@
+.idea/
+*.iml
+
+node_modules/
+
+public/dist/
+public/common/
+public/*.html
+public/*.js
+public/*.json

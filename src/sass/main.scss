@@ -1,0 +1,21 @@
+@import 'abstracts/animations';
+@import 'src/sass/abstracts/variables';
+@import 'src/sass/abstracts/mixins';
+
+@import 'src/sass/vendors/bootstrap';
+
+@import 'src/sass/base/reset';
+@import 'src/sass/base/typography';
+
+@import 'src/sass/layout/navigation';
+@import 'src/sass/layout/grid';
+@import 'src/sass/layout/header';
+@import 'src/sass/layout/footer';
+@import 'src/sass/layout/form';
+
+@import 'src/sass/components/buttons';
+
+@import 'src/sass/pages/home';
+
+@import 'src/sass/themes/theme';
+@import 'src/sass/themes/admin';
