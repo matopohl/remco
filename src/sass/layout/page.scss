@@ -12,6 +12,10 @@ body {
     grid-template-rows: auto;
   }
 
+  .row {
+    width: 100%;
+  }
+
   .container-content {
     width: 100%;
     grid-column: 2/3;

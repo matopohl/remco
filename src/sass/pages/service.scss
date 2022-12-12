@@ -2,7 +2,23 @@
   background-color: cadetblue;
 
   .container-content-service {
-    background-color: darkcyan;
+    background-color: antiquewhite;
+
+    .flex-container {
+      justify-content: space-between;
+
+      .flex-item {
+        width: 45%;
+        background-color: darkcyan;
+      }
+
+    }
+
+    @media (max-width: 800px) {
+      .flex-container {
+        //flex-direction: column;
+      }
+    }
   }
 
 }
