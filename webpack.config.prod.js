@@ -9,9 +9,7 @@ module.exports = {
     mode: "production",
     entry: {
         "script": "./src/javascript/main.js",
-        "style": "./src/sass/main.scss",
-        "style2": "./src/css/main.css",
-        "font": ["./src/font/Retro Gaming.ttf"]
+        "style": "./src/sass/main.scss"
     },
     output: {
         path: Path.resolve(__dirname, "./public"),
@@ -144,22 +142,21 @@ module.exports = {
         }),
         new WebpackRemoveEmptyScripts(),
         new HtmlWebpackPlugin({
-            template: "./src/handlebars/index.hbs",
-            filename: "index.html",
+            template: "./src/html/sk/index.html",
+            filename: "sk/index.html",
             chunks: [
                 "script",
-                "style",
-                "font"
+                "style"
             ]
         }),
         new HtmlWebpackPlugin({
-            template: "./src/handlebars/common/header.hbs",
-            filename: "./common/header.html",
+            template: "./src/html/sk/common/header.html",
+            filename: "./sk/common/header.html",
             chunks: []
         }),
         new HtmlWebpackPlugin({
-            template: "./src/handlebars/common/footer.hbs",
-            filename: "./common/footer.html",
+            template: "./src/html/sk/common/footer.html",
+            filename: "./sk/common/footer.html",
             chunks: []
         })
     ],

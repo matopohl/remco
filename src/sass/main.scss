@@ -1,21 +1,23 @@
-@import 'abstracts/animations';
 @import 'src/sass/abstracts/variables';
-@import 'src/sass/abstracts/mixins';
-
-@import 'src/sass/vendors/bootstrap';
 
 @import 'src/sass/base/reset';
 @import 'src/sass/base/typography';
 
-@import 'src/sass/layout/navigation';
-@import 'src/sass/layout/grid';
-@import 'src/sass/layout/header';
-@import 'src/sass/layout/footer';
-@import 'src/sass/layout/form';
+@import 'src/sass/components/form';
+@import 'src/sass/components/navigation';
 
-@import 'src/sass/components/buttons';
+@import 'src/sass/layout/page';
 
-@import 'src/sass/pages/home';
+@import 'src/sass/pages/aboutUs';
+@import 'src/sass/pages/contact';
+@import 'src/sass/pages/footer';
+@import 'src/sass/pages/header';
+@import 'src/sass/pages/reference';
+@import 'src/sass/pages/service';
+@import 'src/sass/pages/whyUs';
 
 @import 'src/sass/themes/theme';
-@import 'src/sass/themes/admin';
+
+@import 'src/sass/vendors/bootstrap';
+
+@import "../fontawesome/css/all.css";

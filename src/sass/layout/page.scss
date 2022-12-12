@@ -1,0 +1,46 @@
+body {
+  width: 100vw;
+
+  .container-primary {
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: auto minmax(auto, 102.4rem) auto;
+    grid-template-rows: auto;
+  }
+
+  .container-content {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+
+  .visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .visually-hidden.focusable:active, .visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+  }
+
+}

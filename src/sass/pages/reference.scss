@@ -1,0 +1,29 @@
+.container-reference {
+  background-color: darkkhaki;
+
+  .container-content-reference {
+    background-color: darksalmon;
+
+    .flex-container {
+      justify-content: space-between;
+      align-items: baseline;
+
+      .flex-item {
+        width: 45%;
+        background-color: darkcyan;
+
+        img {
+          width: 40%;
+          margin: auto;
+        }
+
+        .fa-quote-right {
+          float: left;
+          color: #D74754;
+          margin: 0 13px 0px 0;
+        }
+      }
+    }
+
+  }
+}

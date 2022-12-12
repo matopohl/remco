@@ -1,0 +1,30 @@
+.container-why-us {
+  background-color: aqua;
+
+  .container-content-why-us {
+    background-color: aquamarine;
+
+    .flex-container {
+      justify-content: space-between;
+      align-items: baseline;
+
+      .flex-item {
+        flex: 20%;
+        text-align: center;
+
+        img {
+          width: 64px;
+          margin: auto;
+        }
+      }
+    }
+
+    @media (max-width: 800px) {
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+  }
+
+}
+

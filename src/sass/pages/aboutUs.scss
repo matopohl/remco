@@ -1,0 +1,34 @@
+.container-about-us {
+  background-color: darksalmon;
+
+  .container-content-about-us {
+    background-color: lightcoral;
+
+    .flex-container {
+      justify-content: space-between;
+
+      .flex-item:first-child {
+        width: 30%;
+        background-color: darkcyan;
+
+        img {
+          border-radius: 100%;
+          width: 100%;
+        }
+      }
+
+      .flex-item:last-child {
+        width: 60%;
+        background-color: darkcyan;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .flex-container {
+        //flex-direction: column;
+      }
+    }
+  }
+
+}
+

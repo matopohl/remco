@@ -1,0 +1,18 @@
+.container-contact {
+  background-color: hotpink;
+
+  .container-content-contact {
+    background-color: khaki;
+
+    .flex-container {
+      justify-content: space-between;
+      align-items: baseline;
+
+      .flex-item {
+        width: 45%;
+        background-color: indianred;
+      }
+    }
+  }
+
+}
