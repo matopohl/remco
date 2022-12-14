@@ -134,7 +134,9 @@ module.exports = {
         new CleanWebpackPlugin.CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: [
                 "**/*",
-                "!static/**"
+                "!static/**",
+                "!index.php",
+                "!.htaccess"
             ]
         }),
         new MiniCssExtractPlugin({
@@ -158,6 +160,76 @@ module.exports = {
             template: "./src/html/sk/common/footer.html",
             filename: "./sk/common/footer.html",
             chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/sk/pages/aboutUs.html",
+            filename: "./sk/pages/aboutUs.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/sk/pages/whyUs.html",
+            filename: "./sk/pages/whyUs.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/sk/pages/reference.html",
+            filename: "./sk/pages/reference.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/sk/pages/service.html",
+            filename: "./sk/pages/service.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/sk/pages/contact.html",
+            filename: "./sk/pages/contact.html",
+            chunks: []
+        }),
+
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/index.html",
+            filename: "en/index.html",
+            chunks: [
+                "script",
+                "style"
+            ]
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/common/header.html",
+            filename: "./en/common/header.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/common/footer.html",
+            filename: "./en/common/footer.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/pages/aboutUs.html",
+            filename: "./en/pages/aboutUs.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/pages/whyUs.html",
+            filename: "./en/pages/whyUs.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/pages/reference.html",
+            filename: "./en/pages/reference.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/pages/service.html",
+            filename: "./en/pages/service.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/pages/contact.html",
+            filename: "./en/pages/contact.html",
+            chunks: []
         })
-    ],
+
+    ]
 };

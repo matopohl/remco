@@ -1,6 +1,7 @@
 const Path = require("path");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackRemoveEmptyScripts = require("webpack-remove-empty-scripts");
 
@@ -129,7 +130,9 @@ module.exports = {
         new CleanWebpackPlugin.CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: [
                 "**/*",
-                "!static/**"
+                "!static/**",
+                "!index.php",
+                "!.htaccess"
             ]
         }),
         new WebpackRemoveEmptyScripts(),
@@ -174,6 +177,50 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/html/sk/pages/contact.html",
             filename: "./sk/pages/contact.html",
+            chunks: []
+        }),
+
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/index.html",
+            filename: "en/index.html",
+            chunks: [
+                "script",
+                "style"
+            ]
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/common/header.html",
+            filename: "./en/common/header.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/common/footer.html",
+            filename: "./en/common/footer.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/pages/aboutUs.html",
+            filename: "./en/pages/aboutUs.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/pages/whyUs.html",
+            filename: "./en/pages/whyUs.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/pages/reference.html",
+            filename: "./en/pages/reference.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/pages/service.html",
+            filename: "./en/pages/service.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/en/pages/contact.html",
+            filename: "./en/pages/contact.html",
             chunks: []
         })
     ],

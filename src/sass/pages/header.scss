@@ -1,9 +1,42 @@
 .container-header {
   background-color: $colorDark;
-  color: $colorLight2;
+  color: $colorLight;
 
   .container-content-header {
     //background-color: black;
+
+    .flex-container {
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .flex-item.logo {
+        width: 10%;
+      }
+
+      .flex-item.lang {
+        width: auto;
+      }
+
+      .flex-item.menu {
+        width: auto;
+      }
+    }
+
+    nav ul li{
+      float: left;
+      color: $colorLight;
+
+      a {
+        display: block;
+        padding: 0 1.6rem;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    nav ul li.active {
+      color: $colorPrimary;
+    }
   }
 
 }
