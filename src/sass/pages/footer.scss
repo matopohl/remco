@@ -1,6 +1,14 @@
 .container-footer {
-  background-color: darksalmon;
-  color: #fff;
+  background-color: $colorDark;
+  color: $colorLight2;
   position: sticky;
   top: 100%;
+
+  .container-content-footer {
+    a {
+      color: $colorLight;
+      text-decoration: none;
+    }
+  }
+
 }

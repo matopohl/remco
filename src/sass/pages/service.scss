@@ -1,15 +1,27 @@
 .container-service {
-  background-color: cadetblue;
+  background-color: $colorLight;
 
   .container-content-service {
-    background-color: antiquewhite;
+    //background-color: antiquewhite;
 
-    .flex-container {
+    h3 {
+      color: $colorPrimary;
+    }
+
+    h4 {
+      color: $colorSecondary;
+    }
+
+    section .flex-container {
       justify-content: space-between;
 
-      .flex-item {
-        width: 45%;
-        background-color: darkcyan;
+      .flex-item:first-child {
+        min-width: 60%;
+      }
+
+      .flex-item:last-child {
+        min-width: 30%;
+        text-align: right;
       }
 
     }

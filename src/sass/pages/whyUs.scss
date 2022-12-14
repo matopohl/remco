@@ -1,20 +1,35 @@
 .container-why-us {
-  background-color: aqua;
+  background-color: $colorPrimary;
 
   .container-content-why-us {
-    background-color: aquamarine;
+    //background-color: aquamarine;
+    font-family: Montserrat-SemiBold, sans-serif;
 
-    .flex-container {
+    h2 {
+      background-color: $colorPrimary;
+      color: $colorLight;
+    }
+
+    hr {
+      border-top: 1px solid $colorLight;
+    }
+
+    section .flex-container {
       justify-content: space-between;
-      align-items: baseline;
+      align-items: flex-start;
 
       .flex-item {
         flex: 20%;
         text-align: center;
+        color: $colorLight;
 
         img {
-          width: 64px;
-          margin: auto;
+          width: 6.4rem;
+          margin: 0 auto 3.2rem;
+        }
+
+        p {
+          padding: 0 2.4rem;
         }
       }
     }

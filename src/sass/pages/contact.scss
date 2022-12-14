@@ -1,16 +1,83 @@
 .container-contact {
-  background-color: hotpink;
+  background-color: $colorDark2;
 
   .container-content-contact {
-    background-color: khaki;
+    //background-color: khaki;
+    color: $colorLight;
 
-    .flex-container {
+    h2 {
+      background-color: $colorDark2;
+      color: $colorLight;
+    }
+
+    hr {
+      border-top: 1px solid $colorLight;
+    }
+
+    section .flex-container {
       justify-content: space-between;
       align-items: baseline;
 
       .flex-item {
         width: 45%;
-        background-color: indianred;
+      }
+
+      .flex-item:first-child {
+        .flex-container {
+          justify-content: left;
+          //align-items: center;
+
+          .flex-item {
+            width: auto;
+            margin-bottom: 2.4rem;
+          }
+
+          .fa {
+            color: $colorPrimary;
+            margin-right: 2.4rem;
+          }
+        }
+      }
+    }
+
+    form {
+      * {
+        outline: none;
+      }
+
+      .row {
+        margin-bottom: 3.2rem;
+      }
+
+      label {
+        padding-top: 10.6rem;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.8rem 1.6rem;
+        border: none;
+        background-color: $colorLight;
+      }
+
+      textarea {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 25.6rem;
+        padding: 0.8rem 1.6rem;
+        border: none;
+        //margin-bottom: -0.8rem;
+        background-color: $colorLight;
+      }
+
+      button {
+        font-family: Montserrat-SemiBold, sans-serif;
+        float: right;
+        cursor: pointer;
+        padding: 0.8rem 1.6rem;
+        border: none;
+        background-color: $colorPrimary;
+        color: $colorLight;
       }
     }
   }

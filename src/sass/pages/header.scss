@@ -1,4 +1,9 @@
 .container-header {
-  background-color: olive;
-  color: #fff;
+  background-color: $colorDark;
+  color: $colorLight2;
+
+  .container-content-header {
+    //background-color: black;
+  }
+
 }

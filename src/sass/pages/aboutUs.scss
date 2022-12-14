@@ -1,24 +1,36 @@
 .container-about-us {
-  background-color: darksalmon;
+  background-color: $colorLight;
+  //text-transform: uppercase;
 
   .container-content-about-us {
-    background-color: lightcoral;
+    //background-color: lightcoral;
 
     .flex-container {
       justify-content: space-between;
 
       .flex-item:first-child {
         width: 30%;
-        background-color: darkcyan;
 
         img {
           border-radius: 100%;
+          box-shadow: 0 1.9rem 3.8rem rgba(0,0,0,0.30), 0 1.5rem 1.2rem rgba(0,0,0,0.22);
         }
       }
 
       .flex-item:last-child {
         width: 60%;
-        background-color: darkcyan;
+      }
+
+      .author {
+        text-align: end;
+
+        .name {
+          color: $colorPrimary;
+        }
+
+        .role {
+          color: $colorSecondary;
+        }
       }
     }
 

@@ -1,19 +1,46 @@
 body {
   width: 100%;
+  color: $colorDark2;
+
+  a {
+    color: $colorDark2;
+  }
 
   .container-primary {
     min-height: 100vh;
     width: 100%;
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
   }
 
   .container {
     display: grid;
-    grid-template-columns: auto minmax(auto, 102.4rem) auto;
+    grid-template-columns: auto minmax(auto, 128.0rem) auto;
     grid-template-rows: auto;
+    padding: 8rem 6.4rem;
+  }
+
+  .container-service {
+    padding-top: 3.2rem;
+  }
+
+  .row-big {
+    width: 100%;
+    margin-bottom: 6.4rem;
+  }
+
+  .row-big:last-child {
+    margin-bottom: 0;
   }
 
   .row {
     width: 100%;
+    margin-bottom: 1.6rem;
+  }
+
+  .row:last-child {
+    margin-bottom: 0;
   }
 
   .container-content {
@@ -30,21 +57,46 @@ body {
   }
 
   .visually-hidden {
-    border: 0;
     clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
     position: absolute;
-    width: 1px;
   }
-  .visually-hidden.focusable:active, .visually-hidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
+
+  hr {
+    width: 100%;
+    border-top: 1px solid $colorDark2;
+    position: absolute;
+    margin-bottom: 8rem;
+    z-index: 0;
   }
+
+  h2 {
+    font-family: Montserrat-Bold, sans-serif;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    letter-spacing: 0.4rem;
+    background-color: $colorLight;
+    color: $colorDark2;
+    margin: 0 auto 8rem auto;
+    padding: 0 3.2rem;
+    z-index: 1;
+  }
+
+  h3 {
+    font-family: Montserrat-Black, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    letter-spacing: 0.3rem;
+    color: $colorDark2;
+    margin-bottom: 1.6rem;
+  }
+
+  h4 {
+    font-family: Montserrat-Black, sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: $colorDark2;
+    margin-bottom: 1.6rem;
+    }
 
 }

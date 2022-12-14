@@ -1,30 +1,57 @@
 <div class="container-content container-content-contact">
     <article>
         <header>
-            <h2>Kontakt</h2>
+            <div class="flex-container">
+                <h2>Kontakt</h2>
+                <hr>
+            </div>
         </header>
 
         <section>
             <div class="flex-container">
                 <div class="flex-item">
-                    <p><i class="fa fa-home"></i>REMCO s.r.o.</p>
-                    <p><i class="fa fa-hidden"></i>Banšelova 37</p>
-                    <p><i class="fa fa-hidden"></i>821 04 Bratislava</p>
-                    <p>&nbsp;</p>
-                    <p><i class="fa fa-phone"></i>+421 907 221 188</p>
-                    <p>&nbsp;</p>
-                    <p><i class="fa fa-comment"></i>info@remco.sk</p>
+                    <div class="flex-container">
+                        <div class="flex-item">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="flex-item">
+                            <p>REMCO s.r.o.</p>
+                            <p>Banšelova 37</p>
+                            <p>821 04 Bratislava</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-container">
+                        <div class="flex-item">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="flex-item">
+                            <p>+421 907 221 188</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-container">
+                        <div class="flex-item">
+                            <i class="fa fa-comment"></i>
+                        </div>
+                        <div class="flex-item">
+                            <p>info@remco.sk</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="flex-item">
-                    <form class="form" autocomplete="off">
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" />
+                    <form class="form" autocomplete="on">
+                        <div class="row">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" />
+                        </div>
+                        <div class="row">
+                            <label for="text">Správa</label>
+                            <textarea id="text" name="text" required=""></textarea>
+                        </div>
 
-                        <label for="text">Správa</label>
-                        <textarea id="text" name="text" required=""></textarea>
-
-                        <input class="submit" type="button" value="Odoslať" />
+                        <button class="submit" type="button">Odoslať</button>
                     </form>
                 </div>
             </div>

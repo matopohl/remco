@@ -1,26 +1,51 @@
 .container-reference {
-  background-color: darkkhaki;
+  background-color: $colorLight;
 
   .container-content-reference {
-    background-color: darksalmon;
+    //background-color: darksalmon;
 
-    .flex-container {
+    h2 {
+      //color: $colorDark2;
+    }
+
+    section .flex-container {
       justify-content: space-between;
-      align-items: baseline;
+      align-items: flex-start;
 
       .flex-item {
         width: 45%;
-        background-color: darkcyan;
+        background-color: $colorLight;
+        border-radius: 2%;
+        box-shadow: 0 1.9rem 3.8rem rgba(0,0,0,0.30), 0 1.5rem 1.2rem rgba(0,0,0,0.22);
+        padding: 3.2rem;
 
         img {
-          width: 40%;
-          margin: auto;
+          max-width: 80%;
+          margin: 0 auto 3.2rem;
+          border-radius: 100%;
+          box-shadow: 0 1.9rem 3.8rem rgba(0,0,0,0.30), 0 1.5rem 1.2rem rgba(0,0,0,0.22);
+        }
+
+        .text {
+          padding: 3.2rem 0;
+        }
+
+        .author {
+          text-align: end;
+
+          .name {
+            color: $colorPrimary;
+          }
+
+          .role {
+            color: $colorSecondary;
+          }
         }
 
         .fa-quote-right {
           float: left;
-          color: #D74754;
-          margin: 0 13px 0px 0;
+          color: $colorPrimary;
+          margin: 0 1.2rem 0 0;
         }
       }
     }
