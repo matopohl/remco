@@ -150,6 +150,31 @@ module.exports = {
             template: "./src/html/sk/common/footer.html",
             filename: "./sk/common/footer.html",
             chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/sk/pages/aboutUs.html",
+            filename: "./sk/pages/aboutUs.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/sk/pages/whyUs.html",
+            filename: "./sk/pages/whyUs.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/sk/pages/reference.html",
+            filename: "./sk/pages/reference.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/sk/pages/service.html",
+            filename: "./sk/pages/service.html",
+            chunks: []
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/html/sk/pages/contact.html",
+            filename: "./sk/pages/contact.html",
+            chunks: []
         })
     ],
     devtool: "eval",
