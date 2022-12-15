@@ -72,6 +72,11 @@
         background-color: $colorLight;
       }
 
+      input.error, textarea.error {
+        background-color: $colorPrimary;
+        color: $colorLight;
+      }
+
       button {
         font-family: Montserrat-SemiBold, sans-serif;
         float: right;
