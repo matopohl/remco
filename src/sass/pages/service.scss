@@ -2,7 +2,6 @@
   background-color: $colorLight;
 
   .container-content-service {
-    //background-color: antiquewhite;
 
     h3 {
       color: $colorPrimary;
@@ -24,12 +23,6 @@
         text-align: right;
       }
 
-    }
-
-    @media (max-width: 800px) {
-      .flex-container {
-        //flex-direction: column;
-      }
     }
   }
 

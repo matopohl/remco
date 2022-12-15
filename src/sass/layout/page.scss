@@ -18,7 +18,7 @@ body {
     display: grid;
     grid-template-columns: auto minmax(auto, 128.0rem) auto;
     grid-template-rows: auto;
-    padding: 8rem 6.4rem;
+    padding: 8rem 8%;
   }
 
   .container-header {
@@ -84,6 +84,7 @@ body {
     margin: 0 auto 8rem auto;
     padding: 0 3.2rem;
     z-index: 1;
+    text-align: center;
   }
 
   h3 {

@@ -2,7 +2,6 @@
   background-color: $colorLight;
 
   .container-content-reference {
-    //background-color: darksalmon;
 
     h2 {
       //color: $colorDark2;
@@ -51,5 +50,42 @@
       }
     }
 
+    @media (max-width: 899px) {
+      section .flex-container {
+        flex-direction: column;
+
+        .flex-item {
+          min-width: 100%;
+          margin-bottom: 6.4rem;
+
+          img {
+            width: 60%;
+          }
+        }
+        .flex-item:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    @media (max-width: 649px) {
+      section .flex-container {
+        .flex-item {
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 499px) {
+      section .flex-container {
+        .flex-item {
+          img {
+            min-width: 100%;
+          }
+        }
+      }
+    }
   }
 }

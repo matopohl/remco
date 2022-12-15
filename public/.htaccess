@@ -1,1 +1,5 @@
-ErrorDocument 404 test.remco.sk/sk
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteRule ^$ /en/ [L,R=301]
+
+#otherwise
+RewriteRule ^$ /sk/ [L,R=301]

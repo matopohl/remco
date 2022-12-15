@@ -3,14 +3,13 @@
   color: $colorLight;
 
   .container-content-header {
-    //background-color: black;
 
     .flex-container {
       justify-content: space-between;
       align-items: flex-end;
 
       .flex-item.logo {
-        width: 10%;
+        width: 12%;
       }
 
       .flex-item.lang {
@@ -36,6 +35,38 @@
 
     nav ul li.active {
       color: $colorPrimary;
+    }
+
+    @media (max-width: 1099px) {
+      .flex-container {
+        .flex-item.logo {
+          width: 15%;
+        }
+      }
+    }
+
+    @media (max-width: 899px) {
+      .flex-container {
+        .flex-item.logo {
+          width: 17%;
+        }
+      }
+    }
+
+    @media (max-width: 649px) {
+      .flex-container {
+        .flex-item.logo {
+          width: 20%;
+        }
+      }
+    }
+
+    @media (max-width: 499px) {
+      .flex-container {
+        .flex-item.logo {
+          width: 25%;
+        }
+      }
     }
   }
 

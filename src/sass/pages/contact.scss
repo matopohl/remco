@@ -2,7 +2,6 @@
   background-color: $colorDark2;
 
   .container-content-contact {
-    //background-color: khaki;
     color: $colorLight;
 
     h2 {
@@ -18,14 +17,17 @@
       justify-content: space-between;
       align-items: baseline;
 
-      .flex-item {
-        width: 45%;
+      .flex-item:first-child {
+        //width: 25%;
+      }
+
+      .flex-item:last-child {
+        width: 65%;
       }
 
       .flex-item:first-child {
         .flex-container {
           justify-content: left;
-          //align-items: center;
 
           .flex-item {
             width: auto;
@@ -78,6 +80,20 @@
         border: none;
         background-color: $colorPrimary;
         color: $colorLight;
+      }
+    }
+
+    @media (max-width: 1099px) {
+      .flex-container-section {
+        flex-direction: column;
+
+        .flex-item-address {
+          margin: 0 auto 4rem;
+        }
+
+        .flex-item:last-child {
+          min-width: 100%;
+        }
       }
     }
   }

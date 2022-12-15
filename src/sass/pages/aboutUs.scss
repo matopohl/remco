@@ -3,7 +3,6 @@
   //text-transform: uppercase;
 
   .container-content-about-us {
-    //background-color: lightcoral;
 
     .flex-container {
       justify-content: space-between;
@@ -35,9 +34,48 @@
       }
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 1099px) {
       .flex-container {
-        //flex-direction: column;
+        .flex-item:first-child {
+          width: 40%;
+        }
+
+        .flex-item:last-child {
+          width: 50%;
+        }
+      }
+    }
+
+    @media (max-width: 899px) {
+      .flex-container {
+        flex-direction: column;
+
+        .flex-item:first-child {
+          width: 60%;
+          margin-bottom: 6.4rem;
+        }
+
+        .flex-item:last-child {
+          width: 100%;
+        }
+      }
+    }
+
+    @media (max-width: 649px) {
+      section .flex-container {
+
+        .flex-item:first-child {
+          width: 80%;
+        }
+      }
+    }
+
+    @media (max-width: 499px) {
+      section .flex-container {
+
+        .flex-item:first-child {
+          width: 100%;
+        }
       }
     }
   }
