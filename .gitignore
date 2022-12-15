@@ -4,7 +4,8 @@
 node_modules/
 
 public/dist/
-public/common/
+public/en
+public/sk
 public/*.html
 public/*.js
 public/*.json

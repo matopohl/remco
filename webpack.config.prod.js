@@ -135,7 +135,6 @@ module.exports = {
             cleanOnceBeforeBuildPatterns: [
                 "**/*",
                 "!static/**",
-                "!index.php",
                 "!.htaccess"
             ]
         }),
